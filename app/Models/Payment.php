@@ -13,5 +13,13 @@ class Payment extends Model
         'amount',
         'balance',
         'document',
+        'note',
+        'paid_at',
+    ];
+
+    protected $casts = [
+        'amount' => 'float',
+        'balance' => 'float',
+        'paid_at' => 'date',
     ];
 }
